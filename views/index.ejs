@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/a865f27d9f.js" crossorigin="anonymous"></script>
+    <!-- {{!-- for scrolling --}} -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <title>Document</title>
 </head>
@@ -42,8 +44,8 @@
         <%}%>
         <%-include("partials/header")-%>
 
-        <img class="setting" src="images/settings.png" alt="">
-        <section id="header-image">
+        <img data-aos="fade-up" data-aos-duration="2000" class="setting" src="images/settings.png" alt="">
+        <section data-aos="fade-up" data-aos-duration="2000" id="header-image">
             <div class="circle">
                 <img class="men" src="images/men1.png" alt="image">
             </div>
@@ -62,7 +64,7 @@
         </section>
     </header>
     <main>
-        <section id="aboutme">
+        <section data-aos="fade-up" data-aos-duration="2000" id="aboutme">
             <div class="container">
                 <div class="row sec">
                     <div class="col-lg-5 col-sm-5 about">
@@ -93,7 +95,7 @@
                 </div>
             </div>
         </section>
-        <secction id="services">
+        <secction data-aos="fade-up" data-aos-duration="2000" id="services">
             <h1>Services</h1>
             <div class="container">
                 <div class="row">
@@ -122,7 +124,7 @@
                 </div>
             </div>
         </secction>
-        <section id="experience">
+        <section data-aos="fade-up" data-aos-duration="2000" id="experience">
             <h1>Experience</h1>
             <div class="container">
                 <div class="line"></div>
@@ -157,7 +159,7 @@
                 </div>
             </div>
         </section>
-        <section id="comment">
+        <section data-aos="fade-up" data-aos-duration="2000" id="comment">
             <h1>Comments</h1>
             <div class="container">
                 <form action="/" method="post">
@@ -177,7 +179,7 @@
                 </form>
             </div>
         </section>
-        <section id="comment-section">
+        <section data-aos="fade-up" data-aos-duration="2000" id="comment-section">
             <div class="container">
                 <div class="row">
                     <%for(let i=object.length-1; i>=object.length-3; i--){%>
