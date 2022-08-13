@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- css link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fontawesome  -->
+    <!-- font  -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/a865f27d9f.js" crossorigin="anonymous"></script>
+    
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <%if(flag===1){%>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Success</strong> Your message sent Successfully.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+        <%}%>
+        <%if(flag===2){%>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Oops! </strong> Something went wrong, Please try again.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+        <%}%>
+        <%if(flag===3){%>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Hoorah! </strong> Your comment added Successfully.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+        <%}%>
+        <%-include("partials/header")-%>
+
+        <img class="setting" src="images/settings.png" alt="">
+        <section id="header-image">
+            <div class="circle">
+                <img class="men" src="images/men1.png" alt="image">
+            </div>
+            <img class="php" src="images/coding-language.png" alt="">
+
+            <div class="texxt">
+                <h1>Make your first</h1>
+                <div class="circle2"></div>
+                <h2>NodeJs app</h2>
+                <p>I design and create beautifull websites, using nodejs.<span
+                        style="display: block;">and I love what I do.</span></p>
+                <button style="background: #ff7800;" type="button" class="btn">Resume</button>
+                <!-- <button type="button" class="btn btn-outline-secondary">Secondary</button> -->
+            </div>
+            <img class="html" src="images/html.png" alt="">
+        </section>
+    </header>
+    <main>
+        <section id="aboutme">
+            <div class="container">
+                <div class="row sec">
+                    <div class="col-lg-5 col-sm-5 about">
+                        <h1>About <span>me</span></h1>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 box">
+                        <p class="about-heading">Hey there! I'm Saad, a software engineer from Pakistan. I'm a full-time freelancer as a Graphic designer and Web developer. With a degree in Web Development from University of Central Punjab and Graphic Design degree from Tevta. I have been working professionally for 5 years but started learning coding as soon as I could pick up a ruler. </p>
+                        <p class="about-text">Passion motivates me. I am focused on creating beautiful and purposeful design. Feel free to contact me..</p>
+                        <p class="location">Location</p>
+                        <h3>Lahore</h3>
+                    </div>
+                </div>
+                <div class="boxex">
+                    <div class="row">
+                        <div class="col-4">
+                            <a class="fa-brands fa-twitter" href="https://twitter.com/Saad61459245?t=pV2r39aeQnsGbpXxU-3eFA&s=03"></a>
+                            <p>Twitter</p>
+                        </div>
+                        <div class="col-4 mid-box">
+                            <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/saad-aslam-76a018223"></a>
+                            <p>linkedln</p>
+                        </div>
+                        <div class="col-4">
+                            <a class="fa-brands fa-github" href="https://github.com/saadkhan011"></a>
+                            <p>github</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <secction id="services">
+            <h1>Services</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-10 serviceBox box1">
+                        <h3>Web Development</h3>
+                        <p>I make website using nodejs as a backened, I use Node.js because it's library is very fast in code execution. Node.js applications never buffer any data. I use mongodb as a database. </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-10 serviceBox box2">
+                        <h3>Wordpress</h3>
+                        <p>I will develop a professional, eye-catching and responsive WordPress website for you. I make  WP websites using the Elementor, with a combination of plugins depending on your requirements.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-10 serviceBox box1">
+                        <h3>UI/UX Design</h3>
+                        <p>As I am Graphic designer so I make UI of the web on photoshop which makes
+                            the user experience(UX) too much good. So, dont waste more time and start
+                            prototyping of your web.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 serviceBox box2">
+                        <h3>React js</h3>
+                        <p>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.</p>
+                    </div>
+                </div>
+            </div>
+        </secction>
+        <section id="experience">
+            <h1>Experience</h1>
+            <div class="container">
+                <div class="line"></div>
+                <div class="round"></div>
+                <div class="row">
+                    <div class="col-6"></div>
+                    <div class="col-6 e-box">
+                        <h3>My Blog project</h3>
+                        <p>In this blog-project I made a secret page by accessing that page you can post your blog. Secret page can be access by adding "\compose" in the url. <a href="http://bloog-app.herokuapp.com/">Blog Web</a></p>
+                        
+                    </div>
+                </div>
+                <div class="round"></div>
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5 col-sm-6 e-box">
+                        <h3>Art Design</h3>
+                        <p>In 2021 I started selling my service on Fiverr as a NFT artist and I completed more than 50 projects on fiverr. Here is the link to my
+                            NFT gig. <a href="https://www.fiverr.com/share/xjXAlX">NFT gig</a> </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-6"></div>
+                </div>
+                <div class="round"></div>
+                <div class="row">
+                    <div class="col-6"></div>
+                    <div class="col-6 e-box">
+                        <h3>Secret post project</h3>
+                        <p>In this project I made a web where user can post their secret anonymously. 
+                            website will not show any user data. So, head over to this web and post your secret. <a href="http://secretappp.herokuapp.com/">Secret Web</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="comment">
+            <h1>Comments</h1>
+            <div class="container">
+                <form action="/" method="post">
+                    <div class="boxx">
+                        <div>
+                            <label for="">Title</label>
+                        </div>
+                        <input class="text" name="titleText" type="text">
+                    </div>
+                    <div class="boxx">
+                        <div>
+                            <label for="">post</label>
+                        </div>
+                        <textarea class="textarea" name="postText" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <button style="background: #ff7800;" class="btn" type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+        <section id="comment-section">
+            <div class="container">
+                <div class="row">
+                    <%for(let i=object.length-1; i>=object.length-3; i--){%>
+                        <div class="col-lg-4 col-sm-10 comment-box">
+                            <h3>
+                                <%=object[i].name%>
+                            </h3>
+                            <p><%=object[i].post.slice(0, 345)%>...</p>
+                            <img src="<%=arr[object.length-i-1]%>" alt="image" srcset="">
+                        </div>
+                        <%}%>
+                        <a class="a-tag" href="/post">Read more</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <%-include("partials/footer")-%>
