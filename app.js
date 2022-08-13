@@ -18,6 +18,24 @@ const dbSchema = new mongoose.Schema({
 })
 
 const comment = mongoose.model("comment", dbSchema);
+comment.insertMany([
+    {
+        name: "Ema",
+        post: "I found Saad from fiverr for my nft project. I was finding someone who can help me making my own nft collection. I told Saad about my work. I was really surprised by seeing the quality of work that he gave me it was really great. He completed the order in the given time. His communication level is great. I would strongly suggest you Saad for..."
+    },
+    {
+        name: "John",
+        post: "I found Saad from fiverr for my nft project. I was finding someone who can help me making my own nft collection. I told Saad about my work. I was really surprised by seeing the quality of work that he gave me it was really great. He completed the order in the given time. His communication level is great. I would strongly suggest you Saad for..."
+    },
+    {
+        name: "Jacob",
+        post: "I found Saad from fiverr for my nft project. I was finding someone who can help me making my own nft collection. I told Saad about my work. I was really surprised by seeing the quality of work that he gave me it was really great. He completed the order in the given time. His communication level is great. I would strongly suggest you Saad for..."
+    },
+    {
+        name: "David",
+        post: "I found Saad from fiverr for my nft project. I was finding someone who can help me making my own nft collection. I told Saad about my work. I was really surprised by seeing the quality of work that he gave me it was really great. He completed the order in the given time. His communication level is great. I would strongly suggest you Saad for..."
+    }
+])
 
 let array = ['images/menn.png', 'images/men2.png', 'images/men3.png']
 let flag = 0;
