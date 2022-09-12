@@ -330,6 +330,7 @@ textarea{
   }
   .left .content p{
     text-align: justify;
+    margin: 0;
   }
   .left .content .social{
     margin: 20px 0 0 0;
